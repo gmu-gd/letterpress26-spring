@@ -241,6 +241,9 @@ h1 a, h1 a:link, h1 a:hover, h1 a:active, h1 a:visited {
 	.reqs li {
 		margin: 5px 0 0;
 	}
+	h2 {
+		font-size: 3.2rem;
+	}
 }
 @media screen and (prefers-reduced-motion: reduce) {
   html {
