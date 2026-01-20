@@ -14,6 +14,8 @@ body {
 main {
 	width: 800px;
 	margin: 50px auto;
+
+
 }
 #meta {
 	display: grid;
@@ -29,7 +31,7 @@ header {
 	border-top: 2px solid #122C34;
 	padding: 10px 0 10px;
 }
-#syllabus, #schedule, #projects, #exercises {
+#syllabus, #schedule, #projects, #exercises, .project {
 	border-top: 2px solid #122C34;
 	padding-bottom: 25px;
 }
@@ -62,6 +64,13 @@ section ul li, section ol li {
 	margin-right: 5px;
 	color: #FB62F6;
 }
+.reqs {
+	display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.reqs li {
+	margin: 5px 0 0;
+}
 
 /* type styles */
 
@@ -89,6 +98,9 @@ h2	{
 	padding: 0;
 	text-transform: capitalize;
 }
+.project h2 {
+	margin: 0;
+}
 h3	{
 	font-size: 1.25rem;
 	font-weight: 900;
@@ -104,13 +116,25 @@ h4	{
 	font-style: normal;
 	margin: 15px 0 0;
 }
+h5 {
+	font-size: .8rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 50px 0 0;
+}
 p, ul, ol, li	{
 	font-size: 1em;
 }
-p {
-	line-height: 1.4;
+p, blockquote {
+	line-height: 1.5;
 	margin: 5px 0 10px;
 	font-size: 1rem;
+}
+blockquote {
+	font-style: italic;
+	padding: 0 50px;
+	color: #FB62F6;
 }
 nav ul {
 	text-transform: uppercase;
@@ -205,6 +229,13 @@ a:hover {
 		display: flex;
 		flex-wrap: wrap;
   justify-content: space-between;
+	}
+	.reqs {
+		display: grid;
+	  grid-template-columns: 1fr;
+	}
+	.reqs li {
+		margin: 5px 0 0;
 	}
 }
 @media screen and (prefers-reduced-motion: reduce) {
